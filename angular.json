@@ -112,6 +112,28 @@
           }
         }
       }
+    },
+    "engine": {
+      "projectType": "library",
+      "root": "libs/engine",
+      "sourceRoot": "libs/engine/src",
+      "prefix": "diamoncode",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/engine/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/engine/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
