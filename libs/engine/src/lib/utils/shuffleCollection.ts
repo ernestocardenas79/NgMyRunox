@@ -4,8 +4,8 @@ export class ShuffleCollection<T> {
     return this.items.length;
   }
   [Symbol.iterator]() {
-    let getRange = (n: number) => Array.from(new Array(n), (_, i) => i); // [0, n)
-    let shuffle = (arr: any[]) => { // Durstenfeld shuffle
+    const getRange = (n: number) => Array.from(new Array(n), (_, i) => i); // [0, n)
+    const shuffle = (arr: any[]) => { // Durstenfeld shuffle
       for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -14,7 +14,7 @@ export class ShuffleCollection<T> {
     };
 
     let i = 0;
-    let indices = shuffle(getRange(this.length()));
+    const indices = shuffle(getRange(this.length()));
 
     return {
       next: () => {

@@ -1,6 +1,12 @@
 import { Card } from './card';
 
+/**
+*
+*/
 export class Deck {
-   cardList: Card[];
+   cards: Card[];
 
+   build(){
+
+   }
 }
