@@ -1,9 +1,11 @@
+import { Card } from '@diamoncode/engine';
 import { Color } from '../enums/color';
 
-export class Card {
+export class NumericCard extends Card {
     /**
-     * carta de un mazo
+     *
      */
     constructor(public action: Action, public color: Color, public points: number) {
+      super(action, color, points);
     }
 }
