@@ -21,7 +21,9 @@
               "apps/my-runox/src/favicon.ico",
               "apps/my-runox/src/assets"
             ],
-            "styles": ["apps/my-runox/src/styles.css"],
+            "styles": [
+              "apps/my-runox/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -75,7 +77,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/my-runox/src/**/*.ts"]
+            "lintFilePatterns": [
+              "apps/my-runox/src/**/*.ts"
+            ]
           }
         },
         "test": {
@@ -108,7 +112,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/my-runox-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/my-runox-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
@@ -122,7 +128,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/engine/src/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/engine/src/**/*.ts"
+            ]
           }
         },
         "test": {
@@ -137,7 +145,8 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": "7afe8452-e1dc-4214-a9e6-05f55aa2ccdd"
   },
   "schematics": {
     "@nrwl/angular": {

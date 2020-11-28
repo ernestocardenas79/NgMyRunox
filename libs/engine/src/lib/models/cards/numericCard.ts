@@ -1,6 +1,6 @@
 import { Card } from '@diamoncode/engine';
 import { Color } from '../enums/color';
-import { Action } from './action';
+import { Action } from './actions/action';
 
 export class NumericCard extends Card {
     /**

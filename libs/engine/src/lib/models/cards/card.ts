@@ -1,4 +1,5 @@
 import { Color } from '../enums/color';
+import { Action } from './actions/action';
 
 export class Card {
     /**
