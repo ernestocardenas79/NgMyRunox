@@ -1,7 +1,7 @@
-import { Color } from '../enums/color';
-import { Action } from './actions/action';
+import { Color } from '../../enums/color';
+import { Action } from '../actions';
 
-export class Card {
+export abstract class Card {
     /**
      * carta de un mazo
      */
