@@ -1,0 +1,10 @@
+:host{
+  display: inline-block;
+  margin:10px;
+  max-width: 490px;
+  width: calc(100% - .3rem);
+  background-color: blue;
+  color: white;
+  min-height: 400px;
+  max-height: 550px;
+}

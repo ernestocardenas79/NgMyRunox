@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'diamoncode-room-preview',
+  selector: 'dmn-room-preview',
   templateUrl: './room-preview.component.html',
   styleUrls: ['./room-preview.component.css']
 })

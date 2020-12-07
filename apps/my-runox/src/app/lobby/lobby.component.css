@@ -5,4 +5,11 @@
   margin: 5px;
   height: calc(100% - 1rem);
   width: calc(100% - 1.3rem);
+  flex-wrap: wrap;
+  overflow: auto;
+
+}
+
+dmn-room-preview:nth-child(1){
+  background-color: burlywood;
 }
