@@ -142,6 +142,57 @@
         }
       },
       "schematics": {}
+    },
+    "playground": {
+      "root": "apps/my-runox",
+      "sourceRoot": "apps/my-runox/src",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/playground",
+            "index": "apps/my-runox/src/index.html",
+            "main": "apps/my-runox/src/main.playground.ts",
+            "polyfills": "apps/my-runox/src/polyfills.ts",
+            "tsConfig": "apps/my-runox/tsconfig.playground.json",
+            "aot": false,
+            "assets": [
+              "apps/my-runox/src/favicon.ico",
+              "apps/my-runox/src/assets"
+            ],
+            "styles": [
+              "apps/my-runox/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/my-runox/src/environments/environment.ts",
+                  "with": "apps/my-runox/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "playground:build",
+            "port": 4201
+          }
+        }
+      }
     }
   },
   "cli": {

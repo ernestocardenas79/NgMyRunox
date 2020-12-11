@@ -1,0 +1,6 @@
+{
+  "sourceRoots": ["./apps/my-runox/src"],
+  "angularCli": {
+    "appName": "playground"
+  }
+}
