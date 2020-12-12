@@ -32,6 +32,9 @@
     },
     "engine": {
       "tags": []
+    },
+    "playground":{
+      "tags":[]
     }
   }
 }
