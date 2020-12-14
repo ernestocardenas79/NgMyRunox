@@ -2,90 +2,21 @@
   "version": 1,
   "projects": {
     "my-runox": {
-      "projectType": "application",
+      "root": "libs/my-runox",
+      "sourceRoot": "libs/my-runox/src",
+      "projectType": "library",
       "schematics": {},
-      "root": "apps/my-runox",
-      "sourceRoot": "apps/my-runox/src",
-      "prefix": "dmn",
       "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/apps/my-runox",
-            "index": "apps/my-runox/src/index.html",
-            "main": "apps/my-runox/src/main.ts",
-            "polyfills": "apps/my-runox/src/polyfills.ts",
-            "tsConfig": "apps/my-runox/tsconfig.app.json",
-            "aot": true,
-            "assets": [
-              "apps/my-runox/src/favicon.ico",
-              "apps/my-runox/src/assets"
-            ],
-            "styles": [
-              "apps/my-runox/src/styles.css"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "apps/my-runox/src/environments/environment.ts",
-                  "with": "apps/my-runox/src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "my-runox:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "my-runox:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "my-runox:build"
-          }
-        },
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/my-runox/src/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/my-runox/**/*.ts"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "apps/my-runox/jest.config.js",
+            "jestConfig": "libs/my-runox/jest.config.js",
             "passWithNoTests": true
           }
         }
@@ -112,9 +43,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/my-runox-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/my-runox-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -128,9 +57,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/engine/src/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/engine/src/**/*.ts"]
           }
         },
         "test": {
@@ -161,9 +88,7 @@
               "apps/my-runox/src/favicon.ico",
               "apps/my-runox/src/assets"
             ],
-            "styles": [
-              "apps/my-runox/src/styles.css"
-            ],
+            "styles": ["apps/my-runox/src/styles.css"],
             "scripts": []
           },
           "configurations": {

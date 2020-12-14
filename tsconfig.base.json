@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@diamoncode/engine": ["libs/engine/src/index.ts"]
+      "@diamoncode/engine": ["libs/engine/src/index.ts"],
+      "@myrunoxModel": ["libs/my-runox/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
