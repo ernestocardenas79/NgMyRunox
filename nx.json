@@ -35,6 +35,9 @@
     },
     "playground": {
       "tags": []
+    },
+    "my-runox-model":{
+      "tags":[]
     }
   }
 }

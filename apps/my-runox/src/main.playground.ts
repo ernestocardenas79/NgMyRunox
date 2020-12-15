@@ -5,7 +5,7 @@ import { PlaygroundModule } from 'angular-playground';
 
 PlaygroundModule
   .configure({
-    selector: 'app-root',
+    selector: 'diamoncode-root',
     overlay: false,
     modules: [],
   });
