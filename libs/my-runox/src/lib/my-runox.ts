@@ -1,7 +1,3 @@
-export function myRunox(): string {
-  return 'my-runox';
-}
-
 export interface Player {
    id: string,
 
