@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import {Room} from '@myrunoxModel';
 
 @Component({
@@ -9,7 +10,13 @@ import {Room} from '@myrunoxModel';
 export class LobbyComponent implements OnInit {
 
   room:Room;
-  constructor() { }
+  register:FormGroup;
+  constructor(private fb: FormBuilder) { }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void {
+    this.register =  this.fb.group({
+      name: ''
+    })
+  }
 }
+
