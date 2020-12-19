@@ -36,8 +36,11 @@
     "playground": {
       "tags": []
     },
-    "my-runox-model":{
-      "tags":[]
+    "my-runox-model": {
+      "tags": []
+    },
+    "dimond-code-ui-lib": {
+      "tags": ["MyRunoxLib"]
     }
   }
 }

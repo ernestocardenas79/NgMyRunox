@@ -21,9 +21,7 @@
               "apps/my-runox/src/favicon.ico",
               "apps/my-runox/src/assets"
             ],
-            "styles": [
-              "apps/my-runox/src/styles.css"
-            ],
+            "styles": ["apps/my-runox/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -77,9 +75,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/my-runox/src/**/*.ts"
-            ]
+            "lintFilePatterns": ["apps/my-runox/src/**/*.ts"]
           }
         },
         "test": {
@@ -208,6 +204,28 @@
           }
         }
       }
+    },
+    "dimond-code-ui-lib": {
+      "projectType": "library",
+      "root": "libs/dimond-code-ui-lib",
+      "sourceRoot": "libs/dimond-code-ui-lib/src",
+      "prefix": "dmd",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/dimond-code-ui-lib/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/dimond-code-ui-lib/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
