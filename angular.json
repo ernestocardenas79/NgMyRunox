@@ -6,7 +6,7 @@
       "schematics": {},
       "root": "apps/my-runox",
       "sourceRoot": "apps/my-runox/src",
-      "prefix": "dmn",
+      "prefix": "rnx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
