@@ -8,10 +8,11 @@ import { CoreModule } from '../core/core.module';
 
 
 @NgModule({
-  declarations: [LobbyComponent, RoomPreviewComponent, CoreModule],
+  declarations: [LobbyComponent, RoomPreviewComponent],
   imports: [
     CommonModule,
-    LobbyRoutingModule
+    LobbyRoutingModule,
+    CoreModule
   ],
   exports:[LobbyComponent]
 })

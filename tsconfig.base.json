@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@diamoncode/engine": ["libs/engine/src/index.ts"],
-      "@myrunoxModel": ["libs/my-runox/src/index.ts"]
+      "@myrunoxModel": ["libs/my-runox/src/index.ts"],
+      "@diamoncode/dimond-code-ui-lib": ["libs/dimond-code-ui-lib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
