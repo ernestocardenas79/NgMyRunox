@@ -1,0 +1,11 @@
+$border-color:red;
+
+:host-context(.dmd-fa-input-red-theme){
+  background: white;
+  border-color: $border-color;
+
+  &.input-focus {
+    box-shadow: 0px 0px 5px $border-color;
+  }
+}
+
