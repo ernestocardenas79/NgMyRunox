@@ -51,5 +51,16 @@ table {
 
 body{
   height: calc(100vh - .3rem);
-  background-color: red;
+}
+
+input {
+  border: 1px solid lightgray;
+}
+
+dmd-fa-input{
+  height: 30px;
+}
+
+.stripe-input dmd-fa-input{
+  border-color: blue;
 }
