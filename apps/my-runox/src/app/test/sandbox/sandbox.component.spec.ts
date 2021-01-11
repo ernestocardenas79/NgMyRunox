@@ -1,5 +1,5 @@
+import { SandboxComponent } from './sandbox.component';
 import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
-import {SandboxComponent} from './sandbox.component';
 import {InputFAModule} from '@diamoncode/dimond-code-ui-lib';
 import { DebugElement } from "@angular/core";
 import { By } from "@angular/platform-browser";
