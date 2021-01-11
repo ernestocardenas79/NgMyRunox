@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'dmd-tab',
   templateUrl: './tab.component.html',
   styleUrls: ['./tab.component.scss']
 })
-export class TabComponent implements OnInit {
+export class TabComponent {
 
-  constructor() { }
+  @Input()
+  title:string;
 
-  ngOnInit(): void {
-  }
+  @Input()
+  selected = false;
 
 }
