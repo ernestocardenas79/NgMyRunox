@@ -4,18 +4,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { TabPanelModule, InputFAModule} from '@diamoncode/dimond-code-ui-lib'
+import { TabPanelModule, InputFAModule, DmdModalModule} from '@diamoncode/dimond-code-ui-lib';
+import { SandBoxModalComponent } from './sand-box-modal/sand-box-modal.component'
 
 @NgModule({
-  declarations: [SandboxComponent, SandboxComponentEj2],
+  declarations: [SandboxComponent, SandboxComponentEj2, SandBoxModalComponent],
   imports: [
     CommonModule,
     FormsModule,
     HttpClientModule,
     InputFAModule,
-    TabPanelModule
+    TabPanelModule,
+    DmdModalModule
   ],
-  exports:[SandboxComponent, SandboxComponentEj2]
+  exports:[SandboxComponent, SandboxComponentEj2, SandBoxModalComponent]
 })
 export class TestModule { }
 
