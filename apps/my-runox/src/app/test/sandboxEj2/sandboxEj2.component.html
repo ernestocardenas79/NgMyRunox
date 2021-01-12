@@ -9,8 +9,8 @@
 </ng-template>
 
 <div class="container">
-  <dmd-tab-panel #tabPanel>
-    <dmd-tab #tablogin title="login">
+  <dmd-tab-panel id="tab-panel" #tabPanel>
+    <dmd-tab #tablogin title="Login" class="login-email">
       <form>
         <div class="form-field"><label>Email:</label><input /></div>
         <div class="form-field"><label>Password:</label><input /></div>
@@ -25,9 +25,11 @@
       </form>
     </dmd-tab>
 
-    <dmd-tab title="Contact">
+    <dmd-tab title="Contact" [selected]="true">
       <form>
-        <div class="form-field"><label>Email:</label><input /></div>
+        <div class="form-field">
+          <label>Email:</label><input class="contact-email" />
+        </div>
         <div class="form-field">
           <label>Message:</label>
           <textarea></textarea>
