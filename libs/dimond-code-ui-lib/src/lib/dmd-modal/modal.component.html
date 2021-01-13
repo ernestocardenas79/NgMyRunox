@@ -1,1 +1,11 @@
-<p>modal works!</p>
+<div class="modal-overlay">
+  <div class="modal-body">
+    <ng-container *ngIf="body; else templateBody">
+      <ng-container *ngTemplateOutlet="body"></ng-container>
+    </ng-container>
+
+    <ng-template #templateBody>
+      <ng-content></ng-content>
+    </ng-template>
+  </div>
+</div>
