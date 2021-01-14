@@ -4,8 +4,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { TabPanelModule, InputFAModule, DmdModalModule} from '@diamoncode/dimond-code-ui-lib';
-import { SandBoxModalComponent } from './sand-box-modal/sand-box-modal.component'
+import {
+  TabPanelModule,
+  InputFAModule,
+  DmdModalModule,
+} from '@diamoncode/dimond-code-ui-lib';
+import { SandBoxModalComponent } from './sand-box-modal/sand-box-modal.component';
 
 @NgModule({
   declarations: [SandboxComponent, SandboxComponentEj2, SandBoxModalComponent],
@@ -15,9 +19,8 @@ import { SandBoxModalComponent } from './sand-box-modal/sand-box-modal.component
     HttpClientModule,
     InputFAModule,
     TabPanelModule,
-    DmdModalModule
+    DmdModalModule.forRoot(),
   ],
-  exports:[SandboxComponent, SandboxComponentEj2, SandBoxModalComponent]
+  exports: [SandboxComponent, SandboxComponentEj2, SandBoxModalComponent],
 })
-export class TestModule { }
-
+export class TestModule {}
