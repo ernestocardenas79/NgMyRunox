@@ -9,3 +9,6 @@ export * from './lib/tab-panel/tab-panel.component';
 export * from './lib/dmd-modal/dmd-modal.module';
 export * from './lib/dmd-modal/modal.component';
 export * from './lib/dmd-modal/dmd-modal-open-click.directive';
+
+export * from './lib/dmd-input-mask/dmd-input-mask.module';
+export * from './lib/dmd-input-mask/input-mask.directive';

@@ -8,11 +8,18 @@ import {
   TabPanelModule,
   InputFAModule,
   DmdModalModule,
+  DmdInputMaskModule,
 } from '@diamoncode/dimond-code-ui-lib';
 import { SandBoxModalComponent } from './sand-box-modal/sand-box-modal.component';
+import { SandboxMaskComponent } from './sandbox-mask/sandbox-mask.component';
 
 @NgModule({
-  declarations: [SandboxComponent, SandboxComponentEj2, SandBoxModalComponent],
+  declarations: [
+    SandboxComponent,
+    SandboxComponentEj2,
+    SandBoxModalComponent,
+    SandboxMaskComponent,
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -20,7 +27,13 @@ import { SandBoxModalComponent } from './sand-box-modal/sand-box-modal.component
     InputFAModule,
     TabPanelModule,
     DmdModalModule.forRoot(),
+    DmdInputMaskModule,
   ],
-  exports: [SandboxComponent, SandboxComponentEj2, SandBoxModalComponent],
+  exports: [
+    SandboxComponent,
+    SandboxComponentEj2,
+    SandBoxModalComponent,
+    SandboxMaskComponent,
+  ],
 })
 export class TestModule {}
