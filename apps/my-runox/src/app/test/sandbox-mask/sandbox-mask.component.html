@@ -73,7 +73,11 @@
       </dmd-tab-panel>
     </ng-template>
 
-    <dmd-modal *dmdModalOpenClick="paymentModal" [body]="modalBody">
+    <dmd-modal
+      [@fadeInOut]
+      *dmdModalOpenClick="paymentModal"
+      [body]="modalBody"
+    >
     </dmd-modal>
 
     <button #paymentModal>Open Payment Modal</button>
