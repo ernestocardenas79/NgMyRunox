@@ -21,7 +21,9 @@
               "apps/my-runox/src/favicon.ico",
               "apps/my-runox/src/assets"
             ],
-            "styles": ["apps/my-runox/src/styles.css"],
+            "styles": [
+              "apps/my-runox/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -52,7 +54,10 @@
                 }
               ]
             }
-          }
+          },
+          "outputs": [
+            "{options.outputPath}"
+          ]
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -85,7 +90,10 @@
           "options": {
             "jestConfig": "apps/my-runox/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": [
+            "coverage/apps/my-runox"
+          ]
         }
       }
     },
@@ -98,7 +106,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/my-runox/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/my-runox/**/*.ts"
+            ]
           }
         },
         "test": {
@@ -106,7 +116,10 @@
           "options": {
             "jestConfig": "libs/my-runox/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": [
+            "coverage/libs/my-runox"
+          ]
         }
       }
     },
@@ -131,7 +144,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/my-runox-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/my-runox-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
@@ -156,7 +171,10 @@
           "options": {
             "jestConfig": "libs/engine/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": [
+            "coverage/libs/engine"
+          ]
         }
       },
       "schematics": {}
@@ -179,7 +197,9 @@
               "apps/my-runox/src/favicon.ico",
               "apps/my-runox/src/assets"
             ],
-            "styles": ["apps/my-runox/src/styles.css"],
+            "styles": [
+              "apps/my-runox/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -198,7 +218,10 @@
               "vendorChunk": false,
               "buildOptimizer": true
             }
-          }
+          },
+          "outputs": [
+            "{options.outputPath}"
+          ]
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -229,7 +252,10 @@
           "options": {
             "jestConfig": "libs/dimond-code-ui-lib/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": [
+            "coverage/libs/dimond-code-ui-lib"
+          ]
         }
       },
       "schematics": {}
