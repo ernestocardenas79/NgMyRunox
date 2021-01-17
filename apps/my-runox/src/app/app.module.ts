@@ -3,11 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {LobbyModule } from './lobby/lobby.module';
-import { TestModule } from './test/test.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, LobbyModule, TestModule
+  imports: [BrowserModule, LobbyModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
