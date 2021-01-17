@@ -35,7 +35,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -75,7 +74,10 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/my-runox/src/**/*.ts"]
+            "lintFilePatterns": [
+              "apps/my-runox/src/**/*.ts",
+              "apps/my-runox/src/**/*.html"
+            ]
           }
         },
         "test": {
@@ -143,7 +145,10 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/engine/src/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/engine/src/**/*.ts",
+              "libs/engine/src/**/*.html"
+            ]
           }
         },
         "test": {
@@ -188,7 +193,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -214,7 +218,10 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/dimond-code-ui-lib/src/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/dimond-code-ui-lib/src/**/*.ts",
+              "libs/dimond-code-ui-lib/src/**/*.html"
+            ]
           }
         },
         "test": {
