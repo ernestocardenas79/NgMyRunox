@@ -1,0 +1,12 @@
+@import '../theme';
+
+:host {
+  border-left: $tab-border;
+  border-right: $tab-border;
+  border-bottom: $tab-border;
+  display: block;
+}
+
+.tab {
+  padding: 15px 25px;
+}
