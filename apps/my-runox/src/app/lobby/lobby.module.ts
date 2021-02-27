@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -6,14 +7,9 @@ import { LobbyComponent } from './lobby.component';
 import { RoomPreviewComponent } from './room-preview/room-preview.component';
 import { CoreModule } from '../core/core.module';
 
-
 @NgModule({
   declarations: [LobbyComponent, RoomPreviewComponent],
-  imports: [
-    CommonModule,
-    LobbyRoutingModule,
-    CoreModule
-  ],
-  exports:[LobbyComponent]
+  imports: [CommonModule, LobbyRoutingModule, CoreModule, SharedModule],
+  exports: [LobbyComponent],
 })
-export class LobbyModule { }
+export class LobbyModule {}

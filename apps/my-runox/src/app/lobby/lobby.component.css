@@ -1,4 +1,4 @@
-:host{
+:host {
   display: flex;
   padding: 5px;
   background-color: yellow;
@@ -7,9 +7,8 @@
   width: calc(100% - 1.3rem);
   flex-wrap: wrap;
   overflow: auto;
-
 }
 
-dmn-room-preview:nth-child(1){
+dmn-room-preview:nth-child(1) {
   background-color: burlywood;
 }
