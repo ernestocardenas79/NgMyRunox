@@ -1,24 +1,25 @@
 export interface Player {
-   id: string,
-
+  id: string;
+  name: string;
+  avatar: string;
 }
 
 export interface Room {
-  host: Player,
-  players: Player[],
-  pointForWin: number,
-  name: string
+  host: Player;
+  name: string;
+  playersLimit: number;
+  scoreLimit: number;
+  players?: Player[];
 }
 
-export enum RoomStatus{
+export enum RoomState {
   OPEN,
-  PLAYING
+  PLAYING,
 }
 
 /// ViewModel
 
-export interface GamingRoom{
-  status: RoomStatus
-  room: Room
+export interface GamingRoom {
+  status: RoomState;
+  room: Room;
 }
-
