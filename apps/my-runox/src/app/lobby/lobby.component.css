@@ -1,14 +1,42 @@
-:host {
-  display: flex;
-  padding: 5px;
-  background-color: yellow;
-  margin: 5px;
-  height: calc(100% - 1rem);
-  width: calc(100% - 1.3rem);
-  flex-wrap: wrap;
-  overflow: auto;
+button {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+  border-style: none;
+  height: 70px;
+  width: 70px;
+  opacity: 0.4;
+  transition: opacity 0.4s ease-in-out;
 }
 
-dmn-room-preview:nth-child(1) {
-  background-color: burlywood;
+button:hover {
+  opacity: 1;
+}
+
+div {
+  display: flex;
+  height: 91%;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+div.overlay {
+  opacity: 0.3;
+  filter: blur(5px);
+  overflow: hidden;
+  background-color: gray;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  height: 8%;
+  min-height: 35px;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,6 +1,12 @@
-<dmn-room-preview></dmn-room-preview>
-<dmn-room-preview></dmn-room-preview>
-<dmn-room-preview></dmn-room-preview>
-<dmn-room-preview></dmn-room-preview>
-<dmn-room-preview></dmn-room-preview>
-
+<header>
+  <h1 class="rnx-chat-title">
+    <img src="/assets/images/logo2x.png" alt="RunoX logo" />
+  </h1>
+</header>
+<div [ngClass]="{ overlay: applyOverlay }">
+  <dmn-room-preview
+    *ngFor="let room of rooms | async"
+    [roomInformation]="room"
+  ></dmn-room-preview>
+</div>
+<button (click)="createRoom($event)">+</button>

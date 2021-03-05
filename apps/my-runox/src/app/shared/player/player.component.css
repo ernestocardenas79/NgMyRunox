@@ -1,7 +1,16 @@
 :host {
   display: block;
-  background-color: chocolate;
 }
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
 h3 {
   text-align: center;
+}
+
+img {
+  border-radius: 50%;
 }

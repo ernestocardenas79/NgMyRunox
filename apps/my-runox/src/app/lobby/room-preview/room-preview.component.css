@@ -1,23 +1,56 @@
 :host {
-  display: inline-block;
+  border-radius: 15px;
+  display: block;
   margin: 10px;
-  max-width: 490px;
+  min-width: 340px;
+  max-width: 30%;
   width: calc(100% - 0.3rem);
-  background-color: blue;
-  color: white;
-  min-height: 200px;
-  max-height: 300px;
-  overflow-y: auto;
+  background-color: rgba(24, 24, 24, 0.82);
+  padding: 15px 10px;
 }
 
-rnx-player {
-  min-width: 10%;
-  max-width: 30%;
+div {
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr 2.5fr;
+  min-height: 300px;
+  max-height: 400px;
+}
+
+aside {
+  background-color: #181818;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+aside rnx-player {
+  max-width: 100px;
+}
+
+button {
+  display: block;
+}
+
+h3 {
+  margin-top: 7px;
+  margin-left: 20px;
 }
 
 section {
-  background-color: lime;
+  overflow-y: auto;
+}
+
+section .player-container {
   display: flex;
-  max-height: 550px;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section .player-container rnx-player {
+  max-width: 33%;
+  margin-right: 3px;
+  margin-bottom: 3px;
 }

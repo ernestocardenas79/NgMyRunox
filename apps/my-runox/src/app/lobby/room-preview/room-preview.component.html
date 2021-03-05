@@ -1,24 +1,20 @@
-<p>side</p>
-<section>
-  <rnx-player></rnx-player>
-  <rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player> <rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player><rnx-player></rnx-player><rnx-player></rnx-player
-  ><rnx-player></rnx-player>
-</section>
+<div>
+  <aside>
+    <rnx-player [player]="host"></rnx-player>
+    <label
+      >Limit
+      <h3>{{ limit }}</h3>
+    </label>
+
+    <label
+      >Players
+      <h3>{{ playersLimit }}</h3>
+    </label>
+    <button type="button">Join</button>
+  </aside>
+  <section>
+    <div class="player-container">
+      <rnx-player *ngFor="let player of players" [player]="player"></rnx-player>
+    </div>
+  </section>
+</div>

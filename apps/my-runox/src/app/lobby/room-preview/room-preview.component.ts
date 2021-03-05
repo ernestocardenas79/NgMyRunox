@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'dmn-room-preview',
   templateUrl: './room-preview.component.html',
-  styleUrls: ['./room-preview.component.css']
+  styleUrls: ['./room-preview.component.css'],
 })
-export class RoomPreviewComponent implements OnInit {
+export class RoomPreviewComponent {
+  limit;
+  playersLimit;
+  players;
+  roomName;
+  host;
 
-  constructor() { }
+  @Input()
+  set roomInformation(i) {
+    const { scoreLimit, playersLimit, name: roomName, host } = i;
 
-  ngOnInit(): void {
+    this.host = host;
+    this.roomName = roomName;
+    this.limit = scoreLimit;
+    this.playersLimit = playersLimit;
+
+    this.players = [...i.players];
   }
-
 }
