@@ -155,3 +155,12 @@ button {
   transition: 0.12s ease-in-out all;
   outline: none;
 }
+
+input {
+  background-color: #111;
+  border: 0.12rem solid #111;
+  border-radius: 0.5rem;
+  padding: 0.63rem 1rem;
+  outline: 0;
+  color: #fff;
+}

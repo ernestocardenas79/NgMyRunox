@@ -10,9 +10,10 @@ import { RoomPreviewComponent } from './room-preview/room-preview.component';
 import { LobbyComponent } from './lobby.component';
 
 import { LobbyService } from './lobby.service';
+import { NewRoomComponent } from './new-room/new-room.component';
 
 @NgModule({
-  declarations: [LobbyComponent, RoomPreviewComponent],
+  declarations: [LobbyComponent, RoomPreviewComponent, NewRoomComponent],
   imports: [
     CommonModule,
     LobbyRoutingModule,
