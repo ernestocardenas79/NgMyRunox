@@ -1,0 +1,91 @@
+$secondary: rgba(0, 0, 0, 0.117647);
+
+:host{
+  display: block;
+}
+/*
+div.modal-overlay {
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51, 51, 51, 0.7);
+  z-index: 10;
+}
+
+div.modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 20;
+  $border: 1px solid $secondary;
+  border: $border;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0,   0, 0, 0.14),
+    0 4px 8px -1px rgba(0, 0, 0, 0.12);
+  height: 100%;
+  width: 100%;
+}
+*/
+
+
+.modal-overlay {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51, 51, 51, 0.7);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  // position: absolute;
+  display: flex;
+
+  // top: 25%;
+  // left: 25%;
+  width: 50%;
+  height: 50%;
+  flex-direction: row;
+  justify-content: center;
+  // height: 50%;
+  // $border: 1px solid $secondary;
+  // border: $border;
+  // border: 1px solid rgba(0, 0, 0, 0.117647);
+  // border-radius: 15px;
+  // box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.14),
+  //   0 4px 8px -1px rgba(0, 0, 0, 0.12);
+}
+
+:host .close-icon {
+ position: relative;
+ margin-top: 5px;
+ left: 95%;
+}
+
+// :host .close-icon::ng-deep fa-icon {
+//   cursor: pointer;
+//   position: fixed;
+//   right: 5px;
+//   top: 5px;
+//   height: 15px;
+//   color: white;
+// }
+:host .close-icon::ng-deep fa-icon{
+  color: #313131;
+  transition: color .3s ease-in;
+}
+
+
+:host .close-icon::ng-deep fa-icon:hover{
+  color: darkgrey;
+}

@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import {faTimes} from '@fortawesome/free-solid-svg-icons'
 
 import { Room } from '@myrunoxModel';
 import { LobbyService } from './lobby.service';
@@ -12,6 +13,8 @@ import { LobbyService } from './lobby.service';
 export class LobbyComponent implements OnInit {
   register: FormGroup;
   creatingRoom = false;
+  faTimes = faTimes;
+
 
   constructor(private fb: FormBuilder, private lobbyService: LobbyService) {}
 
