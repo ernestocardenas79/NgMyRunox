@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    padding: 5px;
+}
+
+h1 {
+    font-size: xx-large;
+    padding: 20px 0;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+}
+
+.deck-container{
+    background-color: lightgreen;
+    flex-grow: 1;
+    padding: 25px;
+}

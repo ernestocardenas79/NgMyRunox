@@ -1,0 +1,22 @@
+{
+  "name": "myrunox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/ernestocardenas79/NgMyRunox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ernestocardenas79/NgMyRunox/issues"
+  },
+  "homepage": "https://github.com/ernestocardenas79/NgMyRunox#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
